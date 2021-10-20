@@ -10,21 +10,16 @@ void setup()
 {
     pinMode(ledPin, OUTPUT);
     pinMode(A1, INPUT);
-    //Serial.begin(9600);
 }
 
 void loop()
 
 {
     unsigned long currentMillis = micros();
-    //int val = 70; // - 200 оборотов
-    //poluperiod = map(interval, 0, 1023, 2500, 100);
 
     for (int a = 1; a <= gear; a++)
     {
-        //Serial.println(interval);
-        //Serial.println(currentMillis);
-        //Serial.println(previousMillis);
+
         if (currentMillis - previousMillis > interval)
         {
             previousMillis = currentMillis;
